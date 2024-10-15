@@ -1,0 +1,201 @@
+
+* {
+    box-sizing: border-box; 
+}
+
+/* General body styling */
+body {
+    font-family: Georgia, 'Times New Roman', serif; 
+    background-color: #fff0f5; /* Light pink background */
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    width: 100%; /* Take up full width */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+header {
+    background-color: #ffb6c1; /* Light pink header background */
+    color: white;
+    text-align: left;
+    padding: 2.5%;
+    font-size: calc(32px + 2px); /* Dynamically increases font size */
+    width: 100%; /* Full width header */
+}
+
+nav {
+    background-color: #ffe4e1; /* Cream-colored background */
+    width: 30%; 
+    padding-top: 1.67%;
+    text-align: center;
+    border-right: 5px solid #ffb6c1; /* Pink border separating nav and content */
+}
+
+nav ul {
+    list-style-type: none; /* Removes bullet points from list items */
+    padding: 0;
+    margin: 0;
+}
+
+/* Adds margin between list items */
+nav ul li {
+    margin: 10px 0px;
+}
+
+nav ul li a {
+    color: #ff69b4; /* Darker pink for links */
+    text-decoration: none;
+    font-size: calc(20px + 2px); /* Dynamically increases font size */
+    display: block;
+    padding: 1.25%;
+    background-color: #ffe4e1; /* Cream background for links */
+}
+
+
+nav ul li a:hover {
+    background-color:  #fffaf0; /* Lighter pink hover effect */
+    color: black;
+}
+
+main {
+    background-color: #fffaf0; /* Very light cream background */
+    padding: 1.67%;
+    width: 100%; /* Takes up full available width */
+    text-align: left;
+    max-width: 70%;
+    min-height: calc(59vh - 90px);
+}
+
+.profile-pic {
+    width: 35%;
+    margin-bottom: 1.5%;
+    float: left; /* Floats the image to the left */
+    margin-left: 0.83%;
+    margin-right: 1.67%;
+    margin-top: 1.67%;
+    height: 20.83; /* Customizable image height */
+}
+
+main p {
+    font-size: calc(18px + 3px); /* Dynamically increases font size */
+    color: #ff69b4; /* Darker pink text color */
+    text-align: left;
+}
+
+footer {
+    background-color: #ffb6c1;
+    color: white;
+    text-align: center;
+    padding:  0.83%;
+    width: 100%; /* Full width */
+    position: relative;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+/* Responsive styling for screens smaller than 750px */
+@media screen and (max-width: 750px) {
+    .container {
+        flex-direction: column; /* Stacks the nav and main content vertically */
+    }
+
+    nav {
+        width: 100%; /* Nav takes full width */
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row; /* Nav items in a row */
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin: 0;
+        padding: 0.42%;
+    }
+
+    nav ul li a {
+        font-size: calc(16px + 1px); /* Smaller font size for smaller screens */
+    }
+
+    /* Main content takes full width on small screens */
+    main {
+        width: 100%;
+        padding:  0.83%;
+        text-align: center;
+    }
+
+    header {
+        text-align: center; /* Center-align the header text on small screens */
+    }
+    
+    .profile-pic {
+        display: block; /* Centers the image */
+        margin-left:  0.83%;
+        margin-right: 1.67%;
+        margin-top: 1.67%;
+        width: 200px; /* Smaller image size for small screens */
+        height: 150px;
+    }
+}
+
+/* Calculator styling: Input fields and button styling for the calculator */
+input[type="text"] {
+    padding: 0.83%;
+    font-size: 16px;
+    border: 2px solid #ffb6c1; /* Pink border around input fields */
+    border-radius: 12px; /* Rounded corners */
+    background-color: #fffaf0; /* Cream background */
+    margin: 0.83%;
+    width: 16.67%;
+}
+
+/* Button styling for the calculator: Adds padding, background color, and hover effects */
+button {
+    padding: 0.83% 1.67%;
+    font-size: 18px;
+    background-color: #ffb6c1; /* Pink background for buttons */
+    color: white;
+    border: none;
+    border-radius: 12px; /* Rounded corners */
+    margin: 0.83%;
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover effect for buttons: Changes background color when hovered */
+button:hover {
+    background-color: #ff69b4; /* Darker pink on hover */
+}
+
+/* Output display styling for the calculator */
+#output {
+    font-size: 24px;
+    color: #ff69b4; /* Dark pink text */
+    padding: 0.83%;
+    margin-top: 1.67%;
+    border-radius: 8px; /* Rounded corners for output display */
+    border: 2px solid #ffb6c1; /* Pink border around the output */
+    background-color: #fffaf0; /* Cream background for the output */
+}
+
+/* Footer styling for the entire site */
+footer {
+    background-color: #ffb6c1;
+    color: white;
+    text-align: center;
+    padding: 1.25%;
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+    border-top: 5px solid #ff69b4; /* Strong pink border at the top of the footer */
+}
