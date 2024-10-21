@@ -3,7 +3,7 @@
     box-sizing: border-box; 
 }
 
-/* General body styling */
+
 body {
     font-family: Georgia, 'Times New Roman', serif; 
     background-color: #fff0f5; /* Light pink background */
@@ -70,6 +70,7 @@ main {
     text-align: left;
     max-width: 70%;
     min-height: calc(59vh - 90px);
+ 
 }
 
 .profile-pic {
@@ -133,6 +134,7 @@ footer {
         width: 100%;
         padding:  0.83%;
         text-align: center;
+        min-width: 100%;
     }
 
     header {
