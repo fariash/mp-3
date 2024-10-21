@@ -1,12 +1,13 @@
-import '../style.css'; 
+import Main from './Main'; 
+import '../style.css';
 
 export default function Home() {
   return (
-    <main>
+    <Main title="Welcome to My Website!"> {/* Using Main component with title */}
       <section>
         {/* Profile picture with alt text */}
         <img src="IMG_8526.jpg" alt="Picture of Faria" className="profile-pic" />
-        
+
         {/* Container for description */}
         <div>
           <p>
@@ -24,6 +25,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-    </main>
+    </Main>
   );
 }

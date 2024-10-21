@@ -1,6 +1,8 @@
+import Main from './Main'; 
+
 const Skills = (): JSX.Element => {
   return (
-    <main>
+    <Main title="Skills"> {/* Main component with title prop */}
       <section>
         {/* Programming Languages Section */}
         <h2>Programming Languages</h2>
@@ -14,9 +16,10 @@ const Skills = (): JSX.Element => {
         <h2>Laboratory Skills</h2>
         <p>Single-cell RNA sequencing, Cell Ranger, genome sequencing, statistical/data analysis</p>
       </section>
-    </main>
+    </Main>
   );
 };
 
 export default Skills;
+
 
