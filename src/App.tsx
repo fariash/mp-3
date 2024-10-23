@@ -8,6 +8,7 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Volunteer from './components/Volunteer';
+import Credits from './components/Credits';
 
 // Define routes using createBrowserRouter
 const router = createBrowserRouter([
@@ -39,6 +40,7 @@ function Root() {
             <Route path="/skills" element={<Skills />} /> {/* Skills route */}
             <Route path="/volunteer" element={<Volunteer />} /> {/* Volunteer route */}
             <Route path="/projects" element={<Projects />} /> {/* Projects route */}
+            <Route path={'/credits'} element={<Credits/>}/>
           </Routes>
         </main>
       </div>

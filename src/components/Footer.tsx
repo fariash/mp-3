@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer>
       <p>
         All Rights Reserved by Faria Shahriar ©{' '}  {/* "Credits" is a clickable link that opens in a new tab */}
-        <a href="https://faria-credits-link.com" target="_blank"> Credits </a>
+        <Link to="./Credits">Credits</Link>
       </p>
     </footer>
   );
