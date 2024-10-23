@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../style.css'; 
 
 // Calculator component
-export default function Calculator(): JSX.Element {
+export default function Calculator() {
     // State variables for first number, second number, and result
     const [firstNumber, setFirstNumber] = useState<number | string>(''); // Stores the first input number
     const [secondNumber, setSecondNumber] = useState<number | string>(''); // Stores the second input number

@@ -1,6 +1,6 @@
 import Main from './Main'; 
 
-const Education = (): JSX.Element => {
+function Education()  {
   return (
     <Main title="Degree Information"> {/* Main degree section title */}
       <p>Bachelor of Science in Computer Science & Biology Minor, Boston University</p>

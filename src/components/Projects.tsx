@@ -1,6 +1,6 @@
 import Calculator from '../components/Calculator';
 
-const Projects = (): JSX.Element => {
+function Projects() {
   return (
     <main>
       <h2>JavaScript Calculator</h2>

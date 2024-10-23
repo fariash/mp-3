@@ -1,6 +1,6 @@
 import Main from './Main'; 
 
-const Volunteer = (): JSX.Element => {
+function Volunteer() {
   return (
     <Main title="Volunteer History"> {/* Main component with title prop */}
       <h3>Head of Volunteers</h3>

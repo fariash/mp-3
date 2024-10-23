@@ -1,6 +1,6 @@
 import Main from './Main'; 
 
-const Experience = (): JSX.Element => {
+function Experience()  {
   return (
     <Main title="Work History"> {/* Section title */}
       <h3>Software Engineer Intern</h3>

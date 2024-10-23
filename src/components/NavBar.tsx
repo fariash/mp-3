@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'; 
 
 // Functional component for Navigation Bar
-const NavBar = () => {
+function Main() {
   return (
     <nav>
       {/* Unordered list containing navigation links */}
@@ -18,4 +18,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Main;
